@@ -26,9 +26,9 @@ pd.set_option('display.width', 500)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
 ### Veriyi Hazırlama ve Analiz Etme
-kontrol = pd.read_excel("ab_testing_veri/ab_testing.xlsx", sheet_name="Control Group") #MaximumBidding
+kontrol = pd.read_excel("ab_testing.xlsx", sheet_name="Control Group") #MaximumBidding
 kontrol["type"] = "MaximumBidding"
-test = pd.read_excel("ab_testing_veri/ab_testing.xlsx", sheet_name="Test Group") #AverageBidding
+test = pd.read_excel("ab_testing.xlsx", sheet_name="Test Group") #AverageBidding
 test["type"] = "AverageBidding"
 
 kontrol.head()
